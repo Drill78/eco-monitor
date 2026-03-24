@@ -206,7 +206,7 @@ export class PanelLayoutManager implements AppModule {
             </a>`;
       })()}</div>
           <span class="logo">${SITE_VARIANT === 'eco' ? 'WIEE' : 'MONITOR'}</span><span class="logo-mobile">${SITE_VARIANT === 'eco' ? 'WIEE Eco Monitor' : 'World Monitor'}</span><span class="version">${SITE_VARIANT === 'eco' ? 'v0.2' : `v${__APP_VERSION__}`}</span>${BETA_MODE ? '<span class="beta-badge">BETA</span>' : ''}
-          ${SITE_VARIANT === 'eco' ? `<span class="credit-link"><span class="credit-text">@wiee</span></span>` : `<a href="https://x.com/eliehabib" target="_blank" rel="noopener" class="credit-link">
+          ${SITE_VARIANT === 'eco' ? `<span class="credit-link"><span class="credit-text">@wiee</span></span><button id="ecoThemeToggle" class="github-link" title="Toggle theme" style="background:none;border:none;cursor:pointer;color:inherit;padding:2px 4px;">${getCurrentTheme() === 'dark' ? '\u2600\uFE0F' : '\u{1F319}'}</button>` : `<a href="https://x.com/eliehabib" target="_blank" rel="noopener" class="credit-link">
             <svg class="x-logo" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             <span class="credit-text">@eliehabib</span>
           </a>

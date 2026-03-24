@@ -561,6 +561,14 @@ export class EventHandlerManager implements AppModule {
       trackThemeChanged(next);
     });
 
+    document.getElementById('ecoThemeToggle')?.addEventListener('click', () => {
+      const next = getCurrentTheme() === 'dark' ? 'light' : 'dark';
+      setTheme(next);
+      const btn = document.getElementById('ecoThemeToggle');
+      if (btn) btn.textContent = next === 'dark' ? '\u2600\uFE0F' : '\u{1F319}';
+      trackThemeChanged(next);
+    });
+
     const sheetBackdrop = document.getElementById('regionSheetBackdrop');
     sheetBackdrop?.addEventListener('click', () => this.closeRegionSheet());
 

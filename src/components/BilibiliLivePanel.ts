@@ -18,6 +18,7 @@ export class BilibiliLivePanel extends Panel {
   }
 
   private render(): void {
+    this.content.innerHTML = '';
     const grid = document.createElement('div');
     grid.style.cssText = 'display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px;';
 
