@@ -40,10 +40,7 @@ export const FEEDS: Record<string, Feed[]> = {
 export const DEFAULT_PANELS: Record<string, PanelConfig> = {
   map: { name: 'Eco Map', enabled: true, priority: 1 },
   'live-news': { name: 'Eco Headlines', enabled: true, priority: 1 },
-  species: { name: 'Conservation Wins', enabled: true, priority: 1 },
-  renewable: { name: 'Renewable Energy', enabled: true, priority: 1 },
-  climate: { name: 'Climate & Weather Impact', enabled: true, priority: 1 },
-  monitors: { name: 'My Monitors', enabled: true, priority: 2 },
+  'live-webcams': { name: 'Live Webcams', enabled: true, priority: 1 },
 };
 
 // Eco-focused map layers — only weather, natural, fires, climate, outages enabled
