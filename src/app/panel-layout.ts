@@ -25,6 +25,7 @@ import {
   getDefaultLiveChannels,
   loadChannelsFromStorage,
   LiveWebcamsPanel,
+  BilibiliLivePanel,
   PinnedWebcamsPanel,
   CIIPanel,
   CascadePanel,
@@ -829,6 +830,10 @@ export class PanelLayoutManager implements AppModule {
 
     if (this.shouldCreatePanel('live-webcams')) {
       this.ctx.panels['live-webcams'] = new LiveWebcamsPanel();
+    }
+
+    if (this.shouldCreatePanel('bilibili-live')) {
+      this.ctx.panels['bilibili-live'] = new BilibiliLivePanel();
     }
 
     if (this.shouldCreatePanel('windy-webcams')) {

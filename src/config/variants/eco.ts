@@ -42,7 +42,7 @@ export const DEFAULT_PANELS: Record<string, PanelConfig> = {
   official: { name: '[ECO] 官方通报', enabled: true, priority: 1 },
   media: { name: '[ECO] 媒体报道', enabled: true, priority: 1 },
   international: { name: '[ECO] 国际视角', enabled: true, priority: 1 },
-  'live-webcams': { name: 'Live Webcams', enabled: true, priority: 1 },
+  'bilibili-live': { name: 'B站生态直播', enabled: true, priority: 1 },
 };
 
 // Eco-focused map layers — only weather, natural, fires, climate, outages enabled
