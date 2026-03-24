@@ -29,5 +29,5 @@ export const SITE_VARIANT: string = (() => {
     return buildVariant;
   }
 
-  return 'full';
+  return buildVariant;
 })();
